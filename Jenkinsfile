@@ -19,7 +19,7 @@ pipeline {
         }
         stage('CheckDir') {
             steps {
-                ls -la
+                sh 'ls -la'
             }
         }
     }
