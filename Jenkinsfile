@@ -21,6 +21,10 @@ pipeline {
             steps {
                 sh 'ls -la'
             }
+        stage('CheckDir') {
+            steps {
+                sh 'hostnamectl'
+            }
         }
     }
 }
