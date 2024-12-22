@@ -25,6 +25,7 @@ pipeline {
         stage('CheckHost') {
             steps {
                 sh 'hostnamectl'
+		sh 'mvn clean package'
             }
         }
     }
