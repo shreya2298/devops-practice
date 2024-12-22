@@ -26,7 +26,7 @@ pipeline {
         stage('CheckHost') {
             steps {
                 sh 'hostnamectl'
-                sh 'cd javaproject'
+                sh 'cd javaproject/HelloWorldProject'
 		sh 'mvn clean package'
 		sh 'tree'
             }
