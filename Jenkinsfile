@@ -13,6 +13,7 @@ pipeline {
                 sh 'hostnamectl'
                 sh 'cd javaproject/HelloWorldProject'
                 sh 'pwd'
+                sh 'whoami'
 		sh 'mvn -f javaproject/HelloWorldProject/pom.xml clean package'
 		sh 'tree'
             }
