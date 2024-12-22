@@ -22,7 +22,7 @@ pipeline {
                 sh 'ls -la'
             }
         }
-        stage('CheckDir') {
+        stage('CheckHost') {
             steps {
                 sh 'hostnamectl'
             }
